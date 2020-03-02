@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="">
+
+<script>
+var Today = new Date();
+var yy=Today.getFullYear();
+var mm=Today.getMonth()+1;
+var dd=Today.getDate();
+var h=Today.getHours();
+var m=Today.getMinutes();
+var s=Today.getSeconds();　
+
+
+function myDate(){
+
+document.getElementById("mToday").innerHTML = Today;
+
+}
+
+function mToday(){
+document.getElementById("mday").innerHTML = yy+"年"+mm+"月"+dd+"日";
+
+}
+
+function mTime(){
+document.getElementById("mT").innerHTML = h+":"+m+":"+s;
+
+}
+
+</script>
+
+
+</head>
+<body>
+
+<button onclick="myDate()">日期時間:</button><span id="mToday"></span><Br>
+<button onclick="mToday()">今天日期:</button><span id="mday"></span><Br>
+<button onclick="mTime()">顯示時間:</button><span id="mT"></span><Br>
+
+
+
+</body>
+
+
+
+</body>
+</html>
+

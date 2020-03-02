@@ -1,0 +1,18 @@
+﻿<html>
+  <head>
+	<title>表單製作</title>
+  </head>
+<body>
+<h3>action="abc.php"要送交的網址,method="post"會隱藏姓名,帳號,密碼資料,<br>沒有打method="post"會預設成method="get"傳輸可看到資料,<br>訂單編號<input type="text" value="axc145236" readonly>只能讀取無法修改,<br>訂單編號:<input type="text" value="axc145236" disabled>背景返灰無法更改,<br>姓名:<....--required>姓名必填<br>
+       電話:<....--required>電話必填<br>size="50" maxlength="6"輸入最長50,最大長度6<br></h3>
+<form action="abc.php" method="post">
+       訂單編號:<input type="text" value="axc145236" readonly><br>
+       訂單編號:<input type="text" value="axc145236" disabled><br>
+       姓名:<input type="text" name="myname" placeholder="請輸入姓名" size="50" maxlength="6"required><br>
+       電話:<input type="text" name="myphone" placeholder="請輸入電話號碼" size="50" maxlength="12" required><br>
+       帳號:<input type="text" name="myaccount" placeholder="請輸入帳號"><br>
+       密碼:<input type="password" name="pwd" placeholder="請輸入密碼"><br>
+	<input type="submit" value="確定">
+</form>
+</body>
+</html>

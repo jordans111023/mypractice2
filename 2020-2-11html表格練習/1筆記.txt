@@ -1,0 +1,58 @@
+<body???>
+例:<body background="image/bg.jpg" text="#444444">
+在body裡面新增
+background="image/bg.jpg" #更改背景圖
+text="#444444" #更改文字顏色
+bgcolor="#FFFFAA" #更改背景顏色
+
+
+<hr???> #分隔線
+例:<hr size="5" widh="80%" color="yellow">
+在hr裡面新增
+size="5" #線高
+widh="80%" #線寬%視窗大小比例
+color="yellow" #線色
+
+<img> #插入圖片
+例:<img src="image/th.jpg" width ="300" height="250"> 
+img src="image/th.jpg" #寫scr等於圖片路徑
+width ="300" #圖寬
+height="250" #圖高
+align="right" #圖靠右
+
+
+<a>連成電腦</a> #a標籤超聯結
+例:<a href="輸入超聯結網址" target="new">點擊我</a> 
+例:<a href="image/th.jpg"><img src="image/th.jpg" width ="300" height="250"></a>
+target="new" #開啟新視窗
+
+
+<h1></h1> #標題字大小 h1~h6 數字越小文字越大
+例:<h1>標題文字</h1>
+
+
+<font size="1">文字內容</font> #文字大小 數字越小文字越小
+例:<font size="1" color="blue" face="新細明體">文字內容</font><br>
+在font裡面新增
+<font size="1" #調整文字大小
+color="blue" #單一調整文字顏色
+face="新細明體" #單一調整字型
+
+
+<marquee>跑馬燈</marquee> #圖片也可用
+例:圖片用法
+<marquee behavior="slide">
+<a href="image/th.jpg"><img src="image/th.jpg" width ="300" height="250"></a>
+</marquee>
+例:<marquee bgcolor="yellow" width="300" height="30" direction="up" behavior="slid">跑馬燈跑馬燈</marquee>
+在marquee裡面新增
+bgcolor="yellow" #背景顏色
+width="300" #背景寬
+height="30" #背景高
+direction="up" #跑的方向 up down right 預設往左
+behavior="slid" #跑的行為 slid(碰牆停止) alternate(左右碰撞)
+loop="10" #跑幾次
+
+
+<center>文字置中</center>
+

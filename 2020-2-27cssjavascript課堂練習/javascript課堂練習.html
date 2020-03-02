@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>0227/css/javascript課堂練習</title>
+<link href="css/javascript課堂練習.css" rel="stylesheet" type="text/css">
+<script>
+
+var Today = new Date();
+
+y="今天日期是 " + Today.getFullYear() + "年" + (Today.getMonth()+1 ) + "月" + Today.getDate() + "日"+"<br>"
+
+document.write(Today +"<br>");
+document.write("今天日期是 " + Today.getFullYear() + "年" + (Today.getMonth()+1 ) + "月" + Today.getDate() + "日"+"<br>");
+h=Today.getHours();
+m=Today.getMinutes();
+s=Today.getSeconds();
+document.write("現在時間是 " + h + "時" + m + "分" + s + "秒"+"<br>");
+	
+	
+	a=5;
+	b=20;
+	c=a+b;
+	alert(a+'+'+b+'='+c);/*彈跳視窗5+20=25*/
+document.write(666+222);
+function myfn(){
+	<!--document.getElementById('demo').innerHTML = 'Hello JavaScript!';-->
+	document.getElementById('demo').innerHTML = 5+6;
+}	
+
+function myfn2(){
+
+	document.write(666+333);
+
+}
+
+
+function myDate(){
+
+	document.getElementById("mToday").innerHTML = Today;
+
+}
+
+function myDate2(){
+
+	document.getElementById("mToday2").innerHTML = "現在時間是 " + h + "時" + m + "分" + s + "秒"+"<br>";
+	
+}
+
+function myDate3(){
+
+	document.getElementById("mToday3").innerHTML = y;
+
+}
+
+function ShowTime(){
+
+	document.getElementById("showbox").innerHTML = new Date();
+	setTimeout('ShowTime()',1000);
+
+}
+
+</script>
+<style>
+h1{
+	color:blue;
+}
+
+</style>
+</head>
+<body onload="ShowTime()">
+<div id="showbox"></div>
+<button onclick="myDate()">日期時間:</button><span id="mToday"></span><br>
+<button onclick="myDate2()">顯示時間:</button><span id="mToday2"></span><br>
+<button onclick="myDate3()">顯示日期:</button><span id="mToday3"></span><br>
+<h1>hello!</h1>  
+<p id="demo"></p>
+<button onclick="myfn()">按鈕</button>
+<!--<button onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">按鈕</button>-->   <!--按鈕觸發案件-->
+
+
+</body>
+</html>
+<script>
+	alert("hello");/*彈跳視窗hello*/
+</script>

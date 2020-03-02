@@ -1,0 +1,35 @@
+﻿
+
+
+
+/*有.類別樣式*/
+
+.myfont{
+	color:red;
+	background:yellow;
+}
+
+/*p 標籤樣式*/
+
+p{
+	font-size:30px;
+	font-family:標楷體;
+
+}
+
+
+/*# id樣式*/
+
+#onlystyle{
+	color:yellow;
+	background:blue;
+}
+
+#roundCorderC{
+	border:6px solid #F0F;
+	height:100px;
+	width:300px;
+	padding:25px/*上*/ 10px/*右*/ 30px/*下*/ 40px /*左*/;
+	-moz-border-redius:25px 10px;
+	-webkit-border-radius:200px 10px 50px 100px ;
+}

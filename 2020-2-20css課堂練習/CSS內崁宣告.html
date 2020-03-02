@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+    <title>
+	套用CSS樣式,內崁宣告
+    </title>
+<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+<style>
+
+h1 {     
+        
+	color:red;
+	font-family: 'Lacquer', sans-serif;   /*使用google fonts裡面的字型 用之前一定要在head裡面先加入link才能使用*/
+	font-weight:bold;
+	border: 1px #336699 solid;
+	    
+}
+
+
+h2 {
+ 	color:#0000CC;    		/*顏色*/
+	font-family:ParkAvenue BT;	/*字型*/
+	font-weight:bold;		/*粗體*/
+	border: 3px #669900 DOUBLE;	/*線框*/
+	    
+}
+p {
+color:red;
+	font-family: 'Lacquer', sans-serif;   /*使用google fonts裡面的字型 用之前一定要在head裡面先加入link才能使用*/
+	font-weight:bold;
+	border: 5px #336699 solid;
+	    
+}
+.txtyellow {    	/*自訂名稱,顏色*/
+
+	color:yellow;
+}
+#mytxt {                /*#為id樣式,id名字不可重複*/
+	color:pink;
+}
+</style>
+</head>
+<body>
+
+<h1 style="color:orange">sf<span class="txtyellow">jkdsa</span>jfiajoia</h1>   
+<!--將要變色的字用span包起來-->
+<h1 style="color:orange" class="txtyellow">sf<span class="txtyellow">jkdsa</span>jfiajoia</h1>   
+<!--如果行內樣式style和類別樣式class和標籤樣式p一起的話優先是style>class>p-->
+
+<h1>sf<span class="txtyellow">jkdsa</span>jfiajoia</h1>
+<h2>sf<span class="txtyellow">jkdsa</span>jfiajoia</h2>
+<h2>sf<span class="txtyellow">jkdsa</span>jfiajoia</h2>
+<h2 class="txtyellow" id="mytxt"  >sf<span class="txtyellow">jkdsa</span>jfiajoia</h2>
+<p>sf<span class="txtyellow">jkdsa</span>jfiajoia</p>
+
+</body>
+</html>

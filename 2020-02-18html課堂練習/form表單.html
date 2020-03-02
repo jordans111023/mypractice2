@@ -1,0 +1,67 @@
+﻿<html>
+  <head>
+	<title>表單製作</title>
+  </head>
+<body>
+<table align="center" border="0" >
+<form enctype="multipart/form-data"><!--輸入後,才能上傳圖檔-->
+        <tr ><td align="right"><font color="red">*</font>帳號:</td>
+	     <td ailgn="left"><input type="text" name="myaccount" placeholder="最多6碼" size="16" maxlength="10"></td><!--required是必須填寫-->
+        </tr>
+        
+	<tr ><td align="right"><font color="red">*</font>密碼:</td>
+	     <td ailgn="left"><input type="password" name="pwd" placeholder="請輸入密碼"size="16" maxlength="10"></td>
+	</tr>
+	
+	<tr ><td align="right">Email:</td>
+	     <td ailgn="left"><input type="email" name="email" size="16" ></td>
+	</tr>
+	
+	<tr ><td align="right">生日:</td>
+	     <td ailgn="left"><input type="date" name="mybir" value="2020-01-01" ></td>
+	</tr>
+	
+	<tr ><td align="right">時間:</td>
+	     <td ailgn="left"><input type="time" name="time" value="14:30"  ></td>
+	</tr>
+	<tr ><td align="right">日期時間:</td>
+	     <td ailgn="left"><input type="datetime-local" name="datetime-local" value="2020-01-01T14:30:30"></td>
+	</tr>
+	<tr ><td align="right">性別:</td>
+	     <td ailgn="left"><input type="radio" name="sex" value="1" checked>男<!--ckecked是預設值-->
+	     <input type="radio" name="sex" value="2">女
+	     <input type="radio" name="sex" value="3">第三性		
+	     </td>
+	</tr>
+	<tr ><td align="right">專長:</td>
+	     <td ailgn="left"><input type="checkbox" name="info1" value="1" >HTML<!--後台可用迴圈抓取多個選項,所以name不能相同-->
+	     <input type="checkbox" name="info2" value="2">Css
+	     <input type="checkbox" name="info3" value="3">Javascript		
+	     </td>
+	</tr>
+	<tr ><td align="right">貨運方式:</td>
+	     <td >
+		<select name="select one">
+			<option value="0">請選擇</option>
+			<option value="1">7-11貨到付款</option>
+			<option value="2">全家貨到付款</option>
+			<option value="3">萊爾富貨到付款</option>
+		</select>				
+	     </td>
+	</tr>
+	<tr>
+	     <td>上傳照片</td><!--上面的form一定要加enctype="multipart/form-data" 才可變成多媒體檔案使用-->
+	     <td><input type="file" name="mypic"></td>	
+	</tr>
+	<tr>
+	     <td>留言內容</td>
+	     <td>
+		<textarea cols="50" rows="10" name="txtmsg" maxlength="150">留言內容</textarea>
+	     </td>	
+	</tr>
+	<tr align="center"><td colspan="2"><input type="submit" value="確定"></td></tr>
+	 <input type="hidden" name="myhidden" value="20">
+</form>
+</table>
+</body>
+</html>

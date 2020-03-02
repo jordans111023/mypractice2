@@ -1,0 +1,49 @@
+﻿#header{
+
+	background-color:green;
+	width:770px;
+	height:80;
+	margin:0 auto;
+
+}
+
+#main{
+	width:770px;
+	margin:0 auto;
+}
+
+#main1{
+	background-image:url(../images/main1.gif);
+	height:23;
+}
+
+#main2{
+	background-image:url(../images/main2.jpg);
+	width:210px;
+	height:420px;/*高度要打不然圖片會無法出現*/
+	float:left;
+	
+}
+
+#main3{
+	background-image:;
+	width:560px;
+	float:right;
+}
+
+#main4{
+	background-image:url(../images/main4.gif);
+	width:770px;
+	clear:both;/*清除浮動*/
+}
+
+#footer{
+	background-image:url(../images/footer.jpg);
+	width:770px;
+	height:70px;
+	line-height:20px;/*行距*/
+	text-align:center;/*文字置中*/
+	font-size:10px;
+	padding-top:5px;/*內距(上)*/
+	margin:0 auto;/*左右自動調整*/
+}
